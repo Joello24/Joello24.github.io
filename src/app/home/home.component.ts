@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
 
 
   listenerFunction(this: HTMLElement, ev: Event) {
-    const height = window.innerHeight/2;
+    const height = window.innerHeight;
     ev.preventDefault();
     console.log("clicked");
     window.scrollTo({top:height, behavior:'smooth'})
