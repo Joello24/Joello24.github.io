@@ -1,0 +1,35 @@
+.welcomeBackground{
+    background-image: url("../../assets\images\background.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 30cm;
+}
+.welcome{
+    color: #fff;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    left: 49.5%;
+    top: 500px;
+    margin-left: -65px;
+    margin-top: -250px;
+}
+.welcome:hover{
+    cursor: pointer;
+    
+}
+.p-link{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: auto;
+    height: auto;
+}
+.p-link:hover{
+    cursor: pointer;
+}

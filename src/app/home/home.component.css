@@ -1,0 +1,57 @@
+.p-profile{
+    background-image: url("../../assets\images\me.jpg");
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.p-tag{
+    background: #7af1ec;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.p-des{
+    color: #f8f8f8;
+    width: 80%;
+}
+.p-link{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.github{
+    display: flex;
+    position: absolute;
+    top: 410px;
+    align-items: center;
+}
+.linkedin{
+    display: flex;
+    position: absolute;
+    top: 410px;
+    padding:0 20px;
+    margin-left: 40px;
+    align-items: center;
+}
+.animation-logo{
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+h2 .blast, h1 .blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    color: #fff;
+    padding-top: 5px;
+}
+.contactForm{
+    position: absolute;
+    top: 1100px;
+    left: 120%;
+}

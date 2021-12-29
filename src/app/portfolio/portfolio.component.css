@@ -1,0 +1,40 @@
+.title{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 255, 255);
+    padding: 25px;
+}
+
+.team{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 15px;
+    color: white;
+}
+.purpose{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 15px;
+    color: white;
+
+}
+.udv{
+    padding-left: 190px;
+    padding-top: 15px;
+    width: 800px;
+    
+}
+.projectContainer{
+    background-color: rgb(32, 32, 32);
+}
+.arrow{
+    padding-left: 5px;
+}
+.spacer{
+    padding-top: 100px;
+    background-color: rgb(32, 32, 32);
+}
+
