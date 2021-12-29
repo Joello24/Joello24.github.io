@@ -52,6 +52,61 @@ h2 .blast, h1 .blast {
 }
 .contactForm{
     position: absolute;
-    top: 1100px;
-    left: 120%;
+    top: 1500px;
+    left: 66%;
+}
+
+
+.projectContainer{
+    background-color: rgb(32, 32, 32);
+}
+.team{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 15px;
+    color: white;
+}
+.title{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 255, 255);
+    padding: 25px;
+}
+.purpose{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+
+}
+
+.udv{
+    padding-left: 190px;
+    padding-top: 15px;
+    width: 800px;
+    
+}
+.sectionTitle{
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 255, 255);
+    padding: 25px;
+}
+.arrows{
+    
+}
+.home-container{
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.arrow-wrapper{
+    position: absolute;
+    left: 85%;
+    top: 350px;
 }

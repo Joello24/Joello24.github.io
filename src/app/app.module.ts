@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
+import { ArrowsComponent } from './arrows/arrows.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     PortfolioComponent,
     AboutComponent,
     ContactComponent,
+    ArrowsComponent,
     
   ],
   imports: [
