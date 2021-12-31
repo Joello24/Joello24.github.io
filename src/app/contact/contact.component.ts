@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ConnectionService } from '../connection.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,22 +9,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  name: string | undefined;
-  email: string | undefined;
-  message: string | undefined;
+  contactForm: FormGroup;
+  disabledSubmitButton: boolean = true;
+  optionsSelect!: Array<any>;
   
-  constructor() { }
-
+    @HostListener('input') oninput() {
+  
+    if (this.contactForm.valid) {
+      this.disabledSubmitButton = false;
+      }
+    }
+  
+    constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
+  
+    this.contactForm = fb.group({
+      'contactFormName': ['', Validators.required],
+      'contactFormEmail': ['', Validators.compose([Validators.required, Validators.email])],
+      'contactFormSubjects': ['', Validators.required],
+      'contactFormMessage': ['', Validators.required],
+      'contactFormCopy': ['true'],
+      });
+    }
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-
-  /**
-   * Process the form we have. Send to whatever backend
-   * Only alerting for now
-   */
-   processForm() {
-    const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
-    alert(allInfo); 
-  }
-
-}
+  
+    onSubmit() {
+        this.connectionService.sendMessage(this.contactForm.value).subscribe(() => {
+        alert('Your message has been sent.');
+        this.contactForm.reset();
+        this.disabledSubmitButton = true;
+      }, error => {
+        console.log('Error', error);
+      });
+    }
+  
+    }

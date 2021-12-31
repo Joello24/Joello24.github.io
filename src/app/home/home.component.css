@@ -96,10 +96,7 @@ h2 .blast, h1 .blast {
     font-weight: bold;
     color: rgb(0, 255, 255);
     padding: 25px;
-}
-.arrows{
-    
-}
+}  
 .home-container{
     height: 100vh;
     overflow: hidden;

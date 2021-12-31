@@ -13,6 +13,10 @@ import { ContactComponent } from './contact/contact.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { ArrowsComponent } from './arrows/arrows.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { ContactService } from './contact.service';
+import { ConnectionService } from './connection.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,7 @@ import { ArrowsComponent } from './arrows/arrows.component';
     PortfolioComponent,
     AboutComponent,
     ContactComponent,
-    ArrowsComponent,
+    ArrowsComponent
     
   ],
   imports: [
@@ -31,9 +35,11 @@ import { ArrowsComponent } from './arrows/arrows.component';
     AppRoutingModule,
     NgbModule,
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule, 
+    HttpClientModule 
   ],
-  providers: [],
+  providers: [ContactService, ConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
