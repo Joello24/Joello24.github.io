@@ -20,6 +20,7 @@
     color: #fff;
     font-size: 20px;
     font-weight: 600;
+    z-index: 3;
     
 }
 .github{
@@ -27,6 +28,7 @@
     position: absolute;
     top: 410px;
     align-items: center;
+    z-index: 2;
 }
 .linkedin{
     display: flex;
@@ -35,6 +37,7 @@
     padding:0 20px;
     margin-left: 40px;
     align-items: center;
+    z-index: 2;
 }
 .animation-logo{
     padding-bottom: 15px;
@@ -55,7 +58,9 @@ h2 .blast, h1 .blast {
     top: 1500px;
     left: 66%;
 }
-
+.container{
+    background-color: transparent;
+}
 
 .projectContainer{
     background-color: rgb(32, 32, 32);
@@ -107,4 +112,31 @@ h2 .blast, h1 .blast {
     position: absolute;
     left: 85%;
     top: 350px;
+    z-index: 2;
 }
+canvas{
+    background: transparent;
+	display: block;
+	position: absolute;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: 1;
+}
+/* .wrap{
+    background-color: white;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: #eee;
+    height: 100vh;
+    width: 100vh;
+} */
