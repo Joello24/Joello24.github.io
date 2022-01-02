@@ -30,7 +30,7 @@ span {
 span:first-child {
     display: block;
     position: absolute;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     left: 25%;
     bottom: 35%;
 }
@@ -38,7 +38,7 @@ span:first-child {
 span:nth-child(2) {
     display: block;
     position: absolute;
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
     left: 45%;
     bottom: 35%;
 }
@@ -46,7 +46,7 @@ span:nth-child(2) {
 span:nth-child(3) {
     display: block;
     position: absolute;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     left: 25%;
     bottom: 54%;
 }
@@ -54,23 +54,23 @@ span:nth-child(3) {
 span:nth-child(4) {
     display: block;
     position: absolute;
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
     left: 45%;
     bottom: 54%;
 }
 
 .round:hover span:nth-child(1) {
-    transform: rotate(-135deg);
+    transform: rotate(-45deg);
 }
 
 .round:hover span:nth-child(2) {
-    transform: rotate(135deg);
+    transform: rotate(45deg);
 }
 
 .round:hover span:nth-child(3) {
-    transform: rotate(225deg);
+    transform: rotate(310deg);
 }
 
 .round:hover span:nth-child(4) {
-    transform: rotate(-225deg);
+    transform: rotate(-310deg);
 }

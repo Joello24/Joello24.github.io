@@ -4,9 +4,13 @@
     <!--HEADER-->
 <app-header></app-header>
 </section>
-<section id = "btn"class = "arrow-wrapper">
+<section id = "btnDown"class = "arrow-wrapper">
     <!--Arrows-->
 <app-arrows id = "btn" ></app-arrows>
+</section>
+<section id = "btnUp"class = "arrow-wrapper2">
+    <!--Arrows-->
+<app-arrows-up id = "btn2" ></app-arrows-up>
 </section>
 <style>
     body {
@@ -15,47 +19,47 @@
 </style>
 <body>
     <canvas id="c"></canvas>
-    <div class="outer">
-        <div class="inner">
-            <section class = "home-container">
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "col-sm-5">
-                            <div class="p-profile"></div>
-                        </div>
-                        <div class="col-sm-7"> 
-                            <span class = "p-tag">Developer</span>
-                            <h1 aria-label=" Hi,  I’m
-                                Robert" class="blast-root"> <span class="blast" aria-hidden="true" style="opacity: 1;">H</span><span class="blast" aria-hidden="true" style="opacity: 1;">i</span><span class="blast" aria-hidden="true" style="opacity: 1;">,</span> <br> <span class="blast" aria-hidden="true" style="opacity: 1;">I</span><span class="blast" aria-hidden="true" style="opacity: 1;">’</span><span class="blast" aria-hidden="true" style="opacity: 1;">m</span>
-                                <img width="50" height="50" src="/../assets/images/r.png" alt="Wordpress Developer Name, Web Developer Name" class="animation-logo">
-                                <span class="blast" aria-hidden="true" style="opacity: 1;">o</span><span class="blast" aria-hidden="true" style="opacity: 1;">b</span><span class="blast" aria-hidden="true" style="opacity: 1;">e</span><span class="blast" aria-hidden="true" style="opacity: 1;">r</span><span class="blast" aria-hidden="true" style="opacity: 1;">t</span><span class="blast" aria-hidden="true" style="opacity: 1;">.</span></h1>
-                            <p class = "p-des mt-3">The purpose of this site is to demonstrate web development skills, display projects and things I'm working on, and provide a convenient way to view my source code/get in touch with me.  
-                            </p>
-                            
-                            <!-- <a class = "p-link" href="/contact-component">Contact me<img src="../../assets/images/arrow.png" alt="Arrow icon" width="22"/>
-                            </a> -->
-                            <ul>
-                                <li>
-                                    <a class = "linkedin" href="https://www.linkedin.com/in/robert-lillyblad-aa624219a?trk=profile-badge"><img src="https://www.seekpng.com/png/detail/8-84419_linkedin-logo-png-icon-linkedin-logo-png.png" alt="Arrow icon" width="50"/></a>
-                                </li>
-                                <li>
-                                    <a class = "github" href="https://github.com/Joello24"><img src="\assets\images\273178_github_icon.png" alt="Arrow icon" width="40"/></a> 
-                                </li>  
-                                <li>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                </li>
-                            </ul>
-                            <br>                   
+        <div class="outer">
+            <div class="inner">
+                <section class = "home-container">
+                    <div class = "container">
+                        <div class = "row">
+                            <div class = "col-sm-5">
+                                <div class="p-profile"></div>
+                            </div>
+                            <div class="col-sm-7"> 
+                                <span class = "p-tag">Developer</span>
+                                <h1 aria-label=" Hi,  I’m
+                                    Robert" class="blast-root"> <span class="blast" aria-hidden="true" style="opacity: 1;">H</span><span class="blast" aria-hidden="true" style="opacity: 1;">i</span><span class="blast" aria-hidden="true" style="opacity: 1;">,</span> <br> <span class="blast" aria-hidden="true" style="opacity: 1;">I</span><span class="blast" aria-hidden="true" style="opacity: 1;">’</span><span class="blast" aria-hidden="true" style="opacity: 1;">m</span>
+                                    <img width="50" height="50" src="/../assets/images/r.png" alt="Wordpress Developer Name, Web Developer Name" class="animation-logo">
+                                    <span class="blast" aria-hidden="true" style="opacity: 1;">o</span><span class="blast" aria-hidden="true" style="opacity: 1;">b</span><span class="blast" aria-hidden="true" style="opacity: 1;">e</span><span class="blast" aria-hidden="true" style="opacity: 1;">r</span><span class="blast" aria-hidden="true" style="opacity: 1;">t</span><span class="blast" aria-hidden="true" style="opacity: 1;">.</span></h1>
+                                <p class = "p-des mt-3">The purpose of this site is to demonstrate web development skills, display projects and things I'm working on, and provide a convenient way to view my source code/get in touch with me.  
+                                </p>
+                                
+                                <!-- <a class = "p-link" href="/contact-component">Contact me<img src="../../assets/images/arrow.png" alt="Arrow icon" width="22"/>
+                                </a> -->
+                                <ul>
+                                    <li>
+                                        <a class = "linkedin" href="https://www.linkedin.com/in/robert-lillyblad-aa624219a?trk=profile-badge"><img src="https://www.seekpng.com/png/detail/8-84419_linkedin-logo-png-icon-linkedin-logo-png.png" alt="Arrow icon" width="50"/></a>
+                                    </li>
+                                    <li>
+                                        <a class = "github" href="https://github.com/Joello24"><img src="\assets\images\273178_github_icon.png" alt="Arrow icon" width="40"/></a> 
+                                    </li>  
+                                    <li>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </li>
+                                </ul>
+                                <br>                   
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
             <div class = "projectContainer">
                 <p class="sectionTitle"> My Portfolio</p>
                 <p class = "title">Security as Code</p>
@@ -64,7 +68,6 @@
                     <p></p>
                     <p class = purpose>See more <a class = "projectsLink" href="/portfolio-component"><img class = "arrow" src="/../../assets/images/arrow.png" alt=""></a></p>
                     <img src="/../../assets/images/securityAsCode.jpg" alt="" class="udv">
-            
             </div>
         </div>
     </div>

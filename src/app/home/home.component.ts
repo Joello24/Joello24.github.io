@@ -18,6 +18,9 @@ export class HomeComponent implements OnInit {
 ngOnInit(): void {
     const button = document.getElementById("btn");
     button?.addEventListener("click", this.listenerFunction);
+
+    const button2 = document.getElementById("btn2");
+    button2?.addEventListener("click", this.listenerFunctionButton);
     
       (function (main) {
         main();
@@ -168,6 +171,13 @@ ngOnInit(): void {
     ev.preventDefault();
     console.log("clicked");
     window.scrollTo({top:height, behavior:'smooth'})
+  }
+
+  listenerFunctionButton(this: HTMLElement, ev: Event) {
+    const height = window.innerHeight;
+    ev.preventDefault();
+    console.log("clicked");
+    window.scrollTo({top:-height, behavior:'smooth'})
   }
 }
 

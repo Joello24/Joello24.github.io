@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ContactService } from './contact.service';
 import { ConnectionService } from './connection.service';
+import { ArrowsUpComponent } from './arrows-up/arrows-up.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ConnectionService } from './connection.service';
     PortfolioComponent,
     AboutComponent,
     ContactComponent,
-    ArrowsComponent
+    ArrowsComponent,
+    ArrowsUpComponent
     
   ],
   imports: [

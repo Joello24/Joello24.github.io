@@ -37,4 +37,15 @@
     padding-top: 100px;
     background-color: rgb(32, 32, 32);
 }
-
+.arrow-wrapper{
+    position: fixed;
+    right: 3vh;
+    top: 86%;
+    z-index: 2;
+}
+.arrow-wrapper2{
+    position: fixed;
+    right: 3vh;
+    top: 74.5%;
+    z-index: 2;
+}

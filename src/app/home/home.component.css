@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    z-index: 1000;
 }
 .p-tag{
     background: #7af1ec;
@@ -109,9 +110,15 @@ h2 .blast, h1 .blast {
     
 }
 .arrow-wrapper{
-    position: absolute;
-    left: 85%;
-    top: 350px;
+    position: fixed;
+    right: 3vh;
+    top: 86%;
+    z-index: 2;
+}
+.arrow-wrapper2{
+    position: fixed;
+    right: 3vh;
+    top: 74.5%;
     z-index: 2;
 }
 canvas{
