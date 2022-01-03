@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
   }
 
 ngOnInit(): void {
+    const text = <HTMLDivElement>document.getElementById("popupTextID");
+    const toggleTextButton = document.getElementById("noticeButton");
+    toggleTextButton?.addEventListener("click", message);
     const button = document.getElementById("btn");
     button?.addEventListener("click", this.listenerFunction);
 
@@ -162,9 +165,21 @@ ngOnInit(): void {
           }
         });
       });
+      function message(){
+        if (text.hidden == null) {
+          text.hidden = true;
+          console.log("setting hidden");
+          
+        }
+        if (text.hidden == true) {
+          text.hidden = false;
+          console.log("setting viewable");
+        }
+        else{
+          text.hidden = true;
+        }
+      }
     }
-  
-
 
   listenerFunction(this: HTMLElement, ev: Event) {
     const height = window.innerHeight;
@@ -179,5 +194,6 @@ ngOnInit(): void {
     console.log("clicked");
     window.scrollTo({top:-height, behavior:'smooth'})
   }
+
 }
 

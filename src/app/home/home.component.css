@@ -1,5 +1,4 @@
 .p-profile{
-    background-image: url("../../assets\images\me.jpg");
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -11,18 +10,23 @@
     background: #7af1ec;
     color: rgb(0, 0, 0);
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 50px;
+    top: 5px;
+    right: 5px;
 }
 .p-des{
     color: #f8f8f8;
     width: 80%;
+    font-size: 35px;
+    right: 5px;
 }
 .p-link{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
+    color: white;
     z-index: 3;
-    
+}
+.col-sm-7{
+    padding-left: 5rem;
+    padding-top: 13rem;
 }
 .github{
     display: flex;
@@ -59,10 +63,6 @@ h2 .blast, h1 .blast {
     top: 1500px;
     left: 66%;
 }
-.container{
-    background-color: transparent;
-}
-
 .projectContainer{
     background-color: rgb(32, 32, 32);
 }
@@ -130,7 +130,10 @@ canvas{
     height: 100vh;
     z-index: 1;
 }
-/* .wrap{
+.sidebar{
+    color: green;
+}
+.wrap{
     background-color: white;
 }
 * {
@@ -143,7 +146,77 @@ html, body {
     height: 100%;
 }
 body {
-    background: #eee;
+    padding-left: 13rem;
+    overflow-x: hidden;
+    display: block;
+    box-sizing: border-box;
+}
+
+.row {
     height: 100vh;
-    width: 100vh;
-} */
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+}
+.tags {
+    color: #515152;
+    position: absolute;
+    bottom: 0;
+    left: 4rem;
+    font-style: italic;
+    font-size: 1.0rem;
+    font-family: 'La Belle Aurore', cursive;
+}
+.top-tags {
+    bottom: auto;
+    top: 2rem;
+}
+.middle-tags{
+
+}
+h1:before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-style: italic;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -5rem;
+    left: 1rem;
+}
+h1:after {
+    content: '</h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-style: italic;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 3.8rem;
+    margin-left: 2rem;
+}
+.notice{
+    color: white;
+    position: absolute;
+    right: -15rem;
+    width: 20%;
+    top: 3rem;
+    cursor: pointer;
+    z-index: 5;
+}
+.popupText{
+    color: turquoise;
+    position: absolute;
+    right: 10rem;
+    width: 300px;
+    top: 4rem;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: monospace;
+}

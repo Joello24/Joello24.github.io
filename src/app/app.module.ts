@@ -18,6 +18,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { ContactService } from './contact.service';
 import { ConnectionService } from './connection.service';
 import { ArrowsUpComponent } from './arrows-up/arrows-up.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ArrowsUpComponent } from './arrows-up/arrows-up.component';
     AboutComponent,
     ContactComponent,
     ArrowsComponent,
-    ArrowsUpComponent
+    ArrowsUpComponent,
+    SidebarComponent
     
   ],
   imports: [
