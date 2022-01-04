@@ -8,12 +8,15 @@
     <!--Arrows-->
 <app-arrows-up id = "btn2" ></app-arrows-up>
 </section>
-
-<style>
+<section id = "penguin"class = "penguin-wrapper">
+    <!--Arrows-->
+<app-penguin></app-penguin>
+</section>
+<!-- <style>
     body {
       background-image: url("../../assets/images/background.png");
     }
-</style>
+</style> -->
 <body>
     
     <section class="sidebar">
@@ -27,6 +30,7 @@
                     <div class = "container">
                         <div class = "row">
                             <a type="button" class="notice" id="noticeButton"><img src="../../assets/images/about.png" width="100px" alt=""> </a>
+                            <a class = "p-link" routerLink="/contact-component" routerLinkActive="active">Contact me<img class="contactArrow" src="../../assets/images/arrow.png" alt="Arrow icon" width="35px"/></a> 
                                 <div class="rounded text-center border border-info p-5" id="popupTextID" hidden="true">The purpose of this site is to display personal projects I'm working on, demonstrate and practice my web development skills, and to provide a conventient location to contact me. <br><br>Thanks for visiting! </div>
                             
                             <div class="col-sm-7"> 
@@ -37,9 +41,6 @@
                                     Robert" class="blast-root"> <span class="blast" aria-hidden="true" style="opacity: 1;">H</span><span class="blast" aria-hidden="true" style="opacity: 1;">i</span><span class="blast" aria-hidden="true" style="opacity: 1;">,</span> <br> <span class="blast" aria-hidden="true" style="opacity: 1;">I</span><span class="blast" aria-hidden="true" style="opacity: 1;">’</span><span class="blast" aria-hidden="true" style="opacity: 1;">m</span>
                                     <img width="50" height="50" src="../../assets/images/r.png" alt="Wordpress Developer Name, Web Developer Name" class="animation-logo">
                                     <span class="blast" aria-hidden="true" style="opacity: 1;">o</span><span class="blast" aria-hidden="true" style="opacity: 1;">b</span><span class="blast" aria-hidden="true" style="opacity: 1;">e</span><span class="blast" aria-hidden="true" style="opacity: 1;">r</span><span class="blast" aria-hidden="true" style="opacity: 1;">t</span><span class="blast" aria-hidden="true" style="opacity: 1;">.</span></h1>
-                                
-                                <a class = "p-link" href="/contact-component">Contact me<img src="../../assets/images/arrow.png" alt="Arrow icon" width="22"/>
-                                </a> 
                                 <ul>
                                         <br>
                                         <br>
