@@ -178,9 +178,7 @@ h1{
     bottom: auto;
     top: 2rem;
 }
-.middle-tags{
 
-}
 h1:before {
     content: '<h1>';
     font-family: 'La Belle Aurore', cursive;
@@ -219,4 +217,5 @@ h1:after {
     cursor: pointer;
     font-size: 22px;
     font-family: monospace;
+    z-index: 0;
 }

@@ -7,8 +7,8 @@ import {fader, slideInAnimation} from './route-animations';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    fader,
-    //slideInAnimation
+    //fader,
+    slideInAnimation
 
   ]
 })
