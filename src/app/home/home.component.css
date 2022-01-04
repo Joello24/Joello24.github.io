@@ -210,7 +210,7 @@ h1:after {
     cursor: pointer;
     z-index: 5;
 }
-.popupText{
+#popupTextID{
     color: turquoise;
     position: absolute;
     right: 10rem;

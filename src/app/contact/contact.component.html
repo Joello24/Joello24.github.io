@@ -3,7 +3,13 @@
 <app-header></app-header>
 </section>
 
+<section class="sidebar">
+  <app-sidebar>
+  </app-sidebar>
+</section>
+
 <!-- Default form contact -->
+<div class="wrapper">
 <form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
     <p class="notice">Notice: This feature is working on a local configuration. The node.js api server is needed and github pages only allows static files. Might look into new hosting soon.</p>
@@ -39,3 +45,4 @@
   
   </form>
   <!-- Default form contact -->
+</div>

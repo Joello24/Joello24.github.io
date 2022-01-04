@@ -7,3 +7,9 @@
 .notice{
     color: white;
 }
+.wrapper{
+    padding-left: 13rem;
+    overflow-x: hidden;
+    display: block;
+    box-sizing: border-box;
+}

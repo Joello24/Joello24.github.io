@@ -29,6 +29,10 @@
 }
 .projectContainer{
     background-color: rgb(32, 32, 32);
+    padding-left: 13rem;
+    overflow-x: hidden;
+    display: block;
+    box-sizing: border-box;
 }
 .arrow{
     padding-left: 5px;
@@ -48,4 +52,7 @@
     right: 3vh;
     top: 74.5%;
     z-index: 2;
+}
+.sidebar{
+    color: green;
 }

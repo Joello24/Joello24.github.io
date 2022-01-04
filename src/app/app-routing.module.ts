@@ -7,11 +7,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 const routes: Routes = [
 
-  {path: '', component: WelcomeComponent},
-  {path: 'home-component', component: HomeComponent},
-  {path: 'portfolio-component', component:PortfolioComponent},
-  {path: 'contact-component', component:ContactComponent},
-  {path: 'about-component', component:AboutComponent}
+  {path: '', component: WelcomeComponent, data: {animation: 'WelcomePage'}}, 
+  {path: 'home-component', component: HomeComponent, data: {animation: 'HomePage'}},
+  {path: 'portfolio-component', component:PortfolioComponent, data: {animation: 'PortfolioPage'}},
+  {path: 'contact-component', component:ContactComponent, data: {animation: 'ContactPage'}},
+  {path: 'about-component', component:AboutComponent, data: {animation: 'AboutPage'}}
 
 ];
 
