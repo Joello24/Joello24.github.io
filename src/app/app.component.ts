@@ -7,8 +7,8 @@ import {fader, slideInAnimation} from './route-animations';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    //fader,
-    slideInAnimation
+    fader
+    //slideInAnimation
 
   ]
 })
@@ -17,5 +17,6 @@ export class AppComponent {
   prepareRoute(outlet: RouterOutlet) {
     return outlet?.activatedRouteData?.['animation'];
   }
+  
   title = 'myWebsitePortfolio';
 }

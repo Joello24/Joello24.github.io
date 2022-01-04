@@ -48,7 +48,7 @@ export const slideInAnimation =
       ]),
       query(':enter', [
         style({ left: '-100%' })
-      ]),
+      ],{ optional: true }),
       query(':leave', animateChild()),
       group([
         query(':leave', [
@@ -56,8 +56,8 @@ export const slideInAnimation =
         ]),
         query(':enter', [
           animate('300ms ease-out', style({ left: '0%' }))
-        ])
-      ]),
+        ],{ optional: true })
+      ],),
       query(':enter', animateChild()),
     ])
   ]);
