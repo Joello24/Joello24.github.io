@@ -19,7 +19,6 @@ import { ContactService } from './contact.service';
 import { ConnectionService } from './connection.service';
 import { ArrowsUpComponent } from './arrows-up/arrows-up.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -42,8 +41,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSlideToggleModule,
     FormsModule,
     ReactiveFormsModule, 
-    HttpClientModule,
-    BrowserAnimationsModule
+    HttpClientModule
   ],
   providers: [ContactService, ConnectionService],
   bootstrap: [AppComponent]

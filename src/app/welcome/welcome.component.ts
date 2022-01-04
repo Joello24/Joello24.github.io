@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 
-declare function penMethod(): any;
-
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
