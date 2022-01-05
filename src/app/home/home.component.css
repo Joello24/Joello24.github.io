@@ -237,3 +237,16 @@ h1:after {
     font-size: 25px;
     font-family: 'La Belle Aurore',cursive;
 }
+.skillWheel-wrapper{
+    top: 200vh;
+    left: 70%;
+    position: absolute;
+    z-index: 5;
+    padding-bottom: 100vh;
+}
+.animatedHeader-wrapper{
+    top: 210vh;
+    left: 18%;
+    position: absolute;
+    z-index: 5;
+}

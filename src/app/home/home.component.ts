@@ -16,14 +16,30 @@ export class HomeComponent implements OnInit {
   }
 
 ngOnInit(): void {
-    const text = <HTMLDivElement>document.getElementById("popupTextID");
-    const toggleTextButton = document.getElementById("noticeButton");
-    toggleTextButton?.addEventListener("click", message);
-    const button = document.getElementById("btn");
-    button?.addEventListener("click", this.listenerFunction);
+     const text = <HTMLDivElement>document.getElementById("popupTextID");
+     const toggleTextButton = document.getElementById("noticeButton");
+     toggleTextButton?.addEventListener("click", message);
+    // const button = document.getElementById("btn");
+    // button?.addEventListener("click", this.listenerFunction);
 
-    const button2 = document.getElementById("btn2");
-    button2?.addEventListener("click", this.listenerFunctionButton);
+    // const button2 = document.getElementById("btn2");
+    // button2?.addEventListener("click", this.listenerFunctionButton);
+    let pageHeight = document.body.clientHeight;
+    let windowHeight;
+    let currentHeight;
+    windowHeight = window.innerHeight;
+    currentHeight = window.innerHeight;
+    const upButton = document.getElementById("btn2");
+    upButton?.addEventListener("click", function(){
+      window.scrollTo({top:0, behavior:'smooth'})
+      currentHeight=0;
+    });
+
+    const downButton = document.getElementById("btn");
+    downButton?.addEventListener("click", function(){
+      window.scrollTo({top:currentHeight, behavior:'smooth'})
+      currentHeight += windowHeight;
+    });
     
       (function (main) {
         main();
@@ -181,19 +197,19 @@ ngOnInit(): void {
       }
     }
 
-  listenerFunction(this: HTMLElement, ev: Event) {
-    const height = window.innerHeight;
-    ev.preventDefault();
-    console.log("clicked");
-    window.scrollTo({top:height, behavior:'smooth'})
-  }
+  // listenerFunction(this: HTMLElement, ev: Event) {
+  //   const height = window.innerHeight;
+  //   ev.preventDefault();
+  //   console.log("clicked");
+  //   window.scrollTo({top:height, behavior:'smooth'})
+  // }
 
-  listenerFunctionButton(this: HTMLElement, ev: Event) {
-    const height = window.innerHeight;
-    ev.preventDefault();
-    console.log("clicked");
-    window.scrollTo({top:-height, behavior:'smooth'})
-  }
+  // listenerFunctionButton(this: HTMLElement, ev: Event) {
+  //   const height = window.innerHeight;
+  //   ev.preventDefault();
+  //   console.log("clicked");
+  //   window.scrollTo({top:-height, behavior:'smooth'})
+  // }
 
 }
 

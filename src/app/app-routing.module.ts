@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'portfolio-component', component:PortfolioComponent, data: {animation: 'PortfolioPage'}},
   {path: 'contact-component', component:ContactComponent, data: {animation: 'ContactPage'}},
   {path: 'about-component', component:AboutComponent, data: {animation: 'AboutPage'}}
+  
 ];
 
 @NgModule({

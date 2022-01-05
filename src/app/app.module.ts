@@ -21,6 +21,8 @@ import { ArrowsUpComponent } from './arrows-up/arrows-up.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PenguinComponent } from './penguin/penguin.component';
+import { SkillsComponent } from './skills/skills.component';
+import { AnimatedheaderComponent } from './animatedheader/animatedheader.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PenguinComponent } from './penguin/penguin.component';
     ArrowsComponent,
     ArrowsUpComponent,
     SidebarComponent,
-    PenguinComponent
+    PenguinComponent,
+    SkillsComponent,
+    AnimatedheaderComponent
     
   ],
   imports: [
