@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PenguinComponent } from './penguin/penguin.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AnimatedheaderComponent } from './animatedheader/animatedheader.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AnimatedheaderComponent } from './animatedheader/animatedheader.compone
     SidebarComponent,
     PenguinComponent,
     SkillsComponent,
-    AnimatedheaderComponent
+    AnimatedheaderComponent,
+    ProjectComponent
     
   ],
   imports: [

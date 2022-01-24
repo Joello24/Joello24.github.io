@@ -61,7 +61,10 @@ h2 .blast, h1 .blast {
     left: 66%;
 }
 .projectContainer{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(41, 41, 40);
+    height: 100vh;
+    width: 100%;
+    display: -moz-grid-group;
 }
 .team{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -81,25 +84,19 @@ h2 .blast, h1 .blast {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     padding-left: 25px;
-    padding-top: 15px;
+    padding-top: 100px;
     padding-bottom: 15px;
     color: white;
 
 }
 
-.udv{
-    padding-left: 190px;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    width: 800px;
-    
-}
 .sectionTitle{
     font-family: monospace;
     font-size: 35px;
     font-weight: bold;
     color: rgb(0, 255, 255);
     padding: 25px;
+    text-align: center;
 }  
 .home-container{
     height: 100vh;
@@ -111,12 +108,14 @@ h2 .blast, h1 .blast {
     right: 3vh;
     top: 86%;
     z-index: 2;
+    padding-top: .5rem;
 }
 .arrow-wrapper2{
     position: fixed;
     right: 3vh;
     top: 74.5%;
     z-index: 2;
+    padding-bottom: .5rem;
 }
 canvas{
     background: transparent;
@@ -177,7 +176,7 @@ h1{
 }
 
 h1:before {
-    content: '<h1>';
+    /* content: '<h1>'; */
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-style: italic;
@@ -187,7 +186,7 @@ h1:before {
     left: 1rem;
 }
 h1:after {
-    content: '</h1>';
+    /* content: '</h1>'; */
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
     font-style: italic;
@@ -198,12 +197,11 @@ h1:after {
 }
 .notice{
     color: white;
-    position: absolute;
-    right: -15rem;
-    width: 20%;
-    top: 3rem;
+    float:right;
     cursor: pointer;
     z-index: 5;
+    margin-top: 2rem;
+    margin-right: 2rem;
 }
 #popupTextID{
     color: turquoise;
@@ -228,25 +226,164 @@ h1:after {
     cursor: pointer;
 }
 .p-link{
-    padding-top: 10px;
+    padding-top: 30px;
     color: white;
     z-index: 5;
     position: absolute;
-    left: 18.2rem;
-    top: 43%;
+    left: 17%;
     font-size: 25px;
     font-family: 'La Belle Aurore',cursive;
 }
-.skillWheel-wrapper{
-    top: 200vh;
-    left: 70%;
-    position: absolute;
-    z-index: 5;
-    padding-bottom: 100vh;
-}
 .animatedHeader-wrapper{
-    top: 210vh;
-    left: 18%;
-    position: absolute;
+    top: 20%;
     z-index: 5;
+    position: relative;
+}
+.projectGrid{
+    display: flex;
+    height: 60vh;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: .5rem;
+    float: left;
+}
+.tooltipimage{
+    cursor: pointer;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    position: relative;
+    margin: .5%;
+    flex-shrink: unset;
+    max-height: 300px;
+}  
+.tooltipbutton{
+  visibility: hidden;
+  color: #fff;
+  /* Position the tooltip text - see examples below! */
+  position: sticky;
+  z-index: 5;
+  opacity: 1;
+  width: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+}
+.udv{
+    max-width: 300px;
+    display: flex;
+    margin: 0%;
+    flex: 50%;
+}
+.tooltipimage:hover .tooltipbutton{
+    visibility: visible;
+    opacity: 1;
+}
+.tooltipimage:hover .tooltipimage{
+    opacity: 1;
+}
+.tooltipimage:hover .udv{
+    opacity: 1;
+}
+#popupProjectID{
+    color: turquoise;
+    max-width: 35%;
+    max-height: 50%;
+    font-size: 22px;
+    font-family: monospace;
+    z-index: 0;
+    float: right;
+    margin-right: 8.5rem;
+    justify-content: center;
+    display: block;
+}
+#popupProjectID2{
+    color: turquoise;
+    max-width: 35%;
+    max-height: 50%;
+    font-size: 22px;
+    font-family: monospace;
+    z-index: 0;
+    float: right;
+    margin-right: 8.5rem;
+    justify-content: center;
+    display: block;
+}
+#popupProjectID3{
+    color: turquoise;
+    max-width: 35%;
+    max-height: 50%;
+    font-size: 22px;
+    font-family: monospace;
+    z-index: 0;
+    float: right;
+    margin-right: 8.5rem;
+    justify-content: center;
+    display: block;
+}
+#popupProjectID4
+{
+    color: turquoise;
+    max-width: 35%;
+    max-height: 50%;
+    font-size: 22px;
+    font-family: monospace;
+    z-index: 0;
+    float: right;
+    margin-right: 8.5rem;
+    justify-content: center;
+    display: block;
+}
+.description{
+    color: whitesmoke;
+    margin-bottom:2rem ;
+    float:inline-start;
+    margin-top: 2rem;
+}
+.listOfTech{
+    display: inline-block;
+}
+.techListElement{
+    display: inline;
+    float: left;
+    margin-right: .5rem;
+}
+.projectLinks{
+    display: inline;
+}
+.tagsContainer{
+    text-align: center;
+}
+.social {
+    color: #909096;
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+.social svg {
+    width: 2.5rem;
+}
+.social svg path {
+    -webkit-transition: fill 0.3s;
+    -o-transition: fill 0.3s;
+    transition: fill 0.3s;
+    fill: #909096;
+}
+.techListBorder{
+    display: inline;
+    float: left;
+    margin-right: .5rem;
+    color: red;
+}
+.skillsContainer{
+    height: 100vh;
+}
+.skillWheel-wrapper{
+    position: relative;
+    top: 70%;
 }

@@ -10,6 +10,20 @@ export class AnimatedheaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    function elementScrolled(elem)
+    {
+    console.log("We check");
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+    }
+      
+    if (elementScrolled('.skillWheel')) {
+        console.log("We scrolled");
+
+    
     $(document).ready(function(){
   
       var $randomnbr = $('.nbr');
@@ -54,5 +68,6 @@ export class AnimatedheaderComponent implements OnInit {
         
     });
   }
-
 }
+  }
+

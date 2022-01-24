@@ -13,12 +13,31 @@ export class HomeComponent implements OnInit {
   isDarkTheme = true;
   windowHeight: any;
   constructor() { 
-  }
+}
 
 ngOnInit(): void {
      const text = <HTMLDivElement>document.getElementById("popupTextID");
      const toggleTextButton = document.getElementById("noticeButton");
      toggleTextButton?.addEventListener("click", message);
+     const projectPopupBox = <HTMLDivElement>document.getElementById("popupProjectID");
+     projectPopupBox.hidden = true;
+     const toggleProjectViewButton = document.getElementById("projectButton");
+     toggleProjectViewButton?.addEventListener("click", projectPopup);
+
+     const projectPopupBox2 = <HTMLDivElement>document.getElementById("popupProjectID2");
+     projectPopupBox2.hidden = true;
+     const toggleProjectViewButton2 = document.getElementById("projectButton2");
+     toggleProjectViewButton2?.addEventListener("click", projectPopup2);
+
+     const projectPopupBox3 = <HTMLDivElement>document.getElementById("popupProjectID3");
+     projectPopupBox3.hidden = true;
+     const toggleProjectViewButton3 = document.getElementById("projectButton3");
+     toggleProjectViewButton3?.addEventListener("click", projectPopup3);
+
+     const projectPopupBox4 = <HTMLDivElement>document.getElementById("popupProjectID4");
+     projectPopupBox4.hidden = true;
+     const toggleProjectViewButton4 = document.getElementById("projectButton4");
+     toggleProjectViewButton4?.addEventListener("click", projectPopup4);
     // const button = document.getElementById("btn");
     // button?.addEventListener("click", this.listenerFunction);
 
@@ -181,6 +200,62 @@ ngOnInit(): void {
           }
         });
       });
+      function projectPopup(){
+        if (projectPopupBox.hidden == null) {
+          projectPopupBox.hidden = true;
+          console.log("setting hidden");
+          
+        }
+        if (projectPopupBox.hidden == true) {
+          projectPopupBox.hidden = false;
+          console.log("setting viewable");
+        }
+        else{
+          projectPopupBox.hidden = true;
+        }
+      }
+      function projectPopup2(){
+        if (projectPopupBox2.hidden == null) {
+          projectPopupBox2.hidden = true;
+          console.log("setting hidden");
+          
+        }
+        if (projectPopupBox2.hidden == true) {
+          projectPopupBox2.hidden = false;
+          console.log("setting viewable");
+        }
+        else{
+          projectPopupBox2.hidden = true;
+        }
+      }
+      function projectPopup3(){
+        if (projectPopupBox3.hidden == null) {
+          projectPopupBox3.hidden = true;
+          console.log("setting hidden");
+          
+        }
+        if (projectPopupBox3.hidden == true) {
+          projectPopupBox3.hidden = false;
+          console.log("setting viewable");
+        }
+        else{
+          projectPopupBox3.hidden = true;
+        }
+      }
+      function projectPopup4(){
+        if (projectPopupBox4.hidden == null) {
+          projectPopupBox4.hidden = true;
+          console.log("setting hidden");
+          
+        }
+        if (projectPopupBox4.hidden == true) {
+          projectPopupBox4.hidden = false;
+          console.log("setting viewable");
+        }
+        else{
+          projectPopupBox4.hidden = true;
+        }
+      }
       function message(){
         if (text.hidden == null) {
           text.hidden = true;

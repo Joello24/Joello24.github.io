@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent} from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectComponent } from './project/project.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'portfolio-component', component:PortfolioComponent, data: {animation: 'PortfolioPage'}},
   {path: 'contact-component', component:ContactComponent, data: {animation: 'ContactPage'}},
-  {path: 'about-component', component:AboutComponent, data: {animation: 'AboutPage'}}
+  {path: 'about-component', component:AboutComponent, data: {animation: 'AboutPage'}},
+  {path: 'project-component', component:ProjectComponent, data: {animation: 'AboutPage'}}
   
 ];
 
@@ -19,4 +21,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
